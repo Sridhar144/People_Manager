@@ -1,0 +1,107 @@
+/* /* Container for the People List */
+.people-list-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* People List */
+.people-list-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.people-list-container li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #fafafa;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.people-list-container li a,
+.people-list-container li button {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 12px;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.people-list-container li button:hover,
+.people-list-container li a:hover {
+  background-color: #45a049;
+}
+
+/* Form styling */
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Delete confirmation styling */
+.delete-confirmation-container {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.delete-confirmation-container button {
+  background-color: #f44336;
+}
+
+.delete-confirmation-container button:hover {
+  background-color: #d32f2f;
+}
+
+@media (max-width: 768px) {
+  .form-container, .people-list-container {
+    padding: 15px;
+  }
+
+  .people-list-container li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
